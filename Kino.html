@@ -1,0 +1,114 @@
+
+<!DOCTYPE html>
+<html lang = "fi">
+
+<style>
+
+body{
+
+	background-image: url("tausta.jpg");
+	background-size: auto, 100%;
+	background-repeat: no-repeat;
+	text-align: center;
+	background-position: center;
+	
+}
+
+
+#container{
+	
+	width:650px;
+	height:auto;
+	background-color:black;
+	position:absolute;
+	left: 50%;
+	margin-left:-300px;
+
+}
+
+
+
+#teksti{
+	display:inline-block;
+	width: 650px;
+	border: 1px solid black;
+	margin-top: 20px;
+	color:yellow;
+	background: black;
+	font-family: 'Open Sans', sans-serif;
+	font-size: 14px;
+	
+
+}
+
+h1{
+	color:yellow;
+}
+
+
+td{
+	padding-left: 20px;
+	width: 100px;
+}
+
+h2{
+	text-align: center;
+	
+}
+
+#infoNappi{
+	margin-left: 550px;
+}
+
+p{
+	text-align: center;
+	
+}
+
+#datalist{
+	width: 250px;
+	font-family: 'Bree Serif', serif;
+	font-size:16px;
+}
+
+#leffalista{
+	font-family: 'Bree Serif', serif;
+	font-size:16px;
+}
+
+
+</style>
+<head>
+	<meta charset="UTF-8">
+	<link href="https://fonts.googleapis.com/css?family=Bree+Serif" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans:600" rel="stylesheet">
+	<title>Finnkino</title>
+
+</head>
+<body onload = "getTeatteri()">
+
+	<div id="container">
+	
+	
+	<h1>Finnkino</h1>
+
+		
+		<select id="datalist"></select>
+	
+		<input onclick = "loadMovies()" type="submit" value = "Hae"><br>
+
+		<p>Valitse elokuva</p>
+		<select id="leffalista" >
+
+		</select>
+		<button id="leffatieto" onclick=leffantiedot() >Hae</button><br>
+		
+		<div id="teksti"></div>
+		
+			
+						
+	</div>
+
+</body>
+<script type='text/javascript' src="kino.js"></script>
+</html>
